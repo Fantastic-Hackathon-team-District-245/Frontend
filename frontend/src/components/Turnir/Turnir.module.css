@@ -28,11 +28,14 @@
 .turnir__grid__container {
     position: absolute;
     right: 50vw;
-    bottom: 40vh;
+    bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .turnir__grid {
-    width: 30vw;
-    height: 30vh;
+    width: 750px;
+    height: 435px;
     border: 2px solid black;
-    border-radius: 50px;
 }
