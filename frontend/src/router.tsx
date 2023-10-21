@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Profil from "./components/Profil/Profil";
 import Turnirs from "./components/Turnirs/Turnirs";
+import Turnir from "./components/Turnir/Turnir";
 import {createBrowserRouter} from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -27,8 +28,8 @@ const router = createBrowserRouter([
         element: <Turnirs/>,
     },
     {
-        path: "/turnir",
-        element: <Turnirs/>,
+        path: "turnir",
+        element: <Turnir/>,
     }
 ])
 
