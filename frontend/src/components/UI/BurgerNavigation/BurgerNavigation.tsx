@@ -14,7 +14,7 @@ const BurgerNavigation = () => {
                 <Link to={"/"}>
                     <li><a className="menu__item">Home</a></li>
                 </Link>
-                <Link to={"/profil"}>
+                <Link to={"/turnirs"}>
                     <li><a className="menu__item">Profil</a></li>
                 </Link>
             </ul>
