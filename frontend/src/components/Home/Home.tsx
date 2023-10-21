@@ -1,16 +1,16 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import profil from "../Profil/Profil.tsx";
+import NavButton from "../UI/NavButton/NavButton.tsx";
 
 const Home = () => {
     return (
         <div>
-            <button>
+            <NavButton>
                 <Link to={"/profil"}> Профиль </Link>
-            </button>
-            <button>
+            </NavButton>
+            <NavButton>
                 <Link to={"/turnirs"}> Список турниров </Link>
-            </button>
+            </NavButton>
         </div>
     );
 };
