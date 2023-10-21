@@ -26,6 +26,10 @@ const router = createBrowserRouter([
         path: "/turnirs",
         element: <Turnirs/>,
     },
+    {
+        path: "/turnir",
+        element: <Turnirs/>,
+    }
 ])
 
 export default router;
