@@ -54,7 +54,7 @@ const matches = [
         "name": "Final - Match",
         "nextMatchId": 1, // Id for the nextMatch in the bracket, if it's final match it must be null OR undefined
         "tournamentRoundText": "4", // Text for Round Header
-        "startTime": "2021-05-30",
+        "startTime": "id:" + 4 + " date:2021-05-30",
         "state": "DONE", // 'NO_SHOW' | 'WALK_OVER' | 'NO_PARTY' | 'DONE' | 'SCORE_DONE' Only needed to decide walkovers and if teamNames are TBD (to be decided)
         "participants": [
             {
