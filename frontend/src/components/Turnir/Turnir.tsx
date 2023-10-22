@@ -5,6 +5,7 @@ import {useSearchParams} from "react-router-dom";
 import BurgerNavigation from "../UI/BurgerNavigation/BurgerNavigation";
 import Modal from "../Modal/Modal"
 import {Data} from "../../store/Data"
+import {SingleElimination} from "../UI/Grid/Grid";
 
 const Turnir = () => {
     let [searchParams, setSearchParams] = useSearchParams();
@@ -65,7 +66,10 @@ const Turnir = () => {
             </div>
             <div className={styles.turnir__grid__container}>
                 <h2>Сетка турнира</h2>
-                <div className={styles.turnir__grid}></div>
+                <div className={styles.turnir__grid}>
+                    {/*<WhiteThemeBracket/>*/}
+                    {todo.todos[id].completed==="НАЧАЛСЯ" ? <SingleElimination/> : <div/>}
+                </div>
                 <button onClick={start}>Начать турнир</button>
             </div>
         </div>

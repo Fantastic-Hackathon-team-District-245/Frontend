@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@g-loot/react-tournament-brackets": "^1.0.30",
+    "@uidotdev/usehooks": "^2.4.0",
     "antd": "^5.10.2",
     "axios": "^1.5.1",
     "mobx": "^6.10.2",
