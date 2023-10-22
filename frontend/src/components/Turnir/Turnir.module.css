@@ -28,7 +28,7 @@
 .turnir__grid__container {
     position: absolute;
     right: 50vw;
-    bottom: 30vh;
+    bottom: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,4 +38,8 @@
     width: 750px;
     height: 435px;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
