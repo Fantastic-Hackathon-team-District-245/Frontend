@@ -1,0 +1,78 @@
+.tournaments_list {
+    width: 50vw;
+    margin-top: 32px;
+}
+
+.tournaments_buttons_container {
+    height: auto;
+    position: sticky;
+    width: 256px;
+    top: 32px;
+}
+
+.tournaments_filters_buttons_container {
+    height: auto;
+    position: sticky;
+    width: 256px;
+    top: 32px;
+    background-color: #dfe9ef;
+    border-radius: 16px;
+}
+
+.tournaments_filter_button {
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0 none;
+    border-radius: 16px;
+    padding: 0;
+    background: none;
+    align-content: center;
+}
+
+.tournaments_filter_button:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.tournaments_filter_button:checked {
+    background-color: rgb(33, 33, 38);
+    color: white;
+}
+
+.tournaments_filter_button:focus {
+    outline: none;
+}
+
+.tournaments_create_new_button {
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 32px;
+    outline: none;
+    background-color: rgb(255, 189, 3);
+    transition: 0.5s;
+}
+
+.tournaments_create_new_button:hover {
+    transform: scale(1.1, 1.1);
+    border-width: 1px;
+    border-color: lightcoral;
+}
+
+.tournaments_create_new_button:focus {
+    outline: none;
+}
+
+.tournaments_create_new_button_text {
+    margin-left: 8px;
+}
+
+.tournaments_page_content {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    justify-content: space-around;
+}
+

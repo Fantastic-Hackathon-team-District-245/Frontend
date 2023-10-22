@@ -2,9 +2,9 @@ import Registration from "./components/Registration/Registration";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Profil from "./components/Profil/Profil";
-import Turnirs from "./components/Turnirs/Turnirs";
-import Turnir from "./components/Turnir/Turnir";
 import {createBrowserRouter} from 'react-router-dom'
+import TournamentsPage from "./components/pages/tournaments/list/TournamentsPage.tsx";
+import Turnir from "./components/Turnir/Turnir.tsx";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/turnirs",
-        element: <Turnirs/>,
+        element: <TournamentsPage/>,
     },
     {
         path: "turnir",
