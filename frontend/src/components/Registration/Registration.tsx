@@ -97,19 +97,19 @@ const Registration = () => {
     return <div className="Registration">
         <form className={styles.form}>
             <h1>Регистрация</h1>
-            {(nameDirty && nameError) && <div style={{color:'red'}}>{nameError}</div> }
+            {(nameDirty && nameError) && <div className={styles.error}>{nameError}</div> }
             <input className={styles.input} onChange={e => nameHandler(e)}
                    value={name} onBlur={e => blurHandler(e)}
                    name='name' type='text' placeholder='Введите имя...'/>
-            {(loginDirty && loginError) && <div style={{color:'red'}}>{loginError}</div> }
+            {(loginDirty && loginError) && <div className={styles.error}>{loginError}</div> }
             <input className={styles.input} onChange={e => loginHandler(e)}
                    value={login} onBlur={e => blurHandler(e)}
                    name='login' type='text' placeholder='Введите логин...'/>
-            {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div> }
+            {(emailDirty && emailError) && <div className={styles.error}>{emailError}</div> }
             <input className={styles.input} onChange={e => emailHandler(e)}
                    value={email} onBlur={e => blurHandler(e)}
                    name='email' type='text' placeholder='Введите email...'/>
-            {(passwordDirty && passwordError) && <div style={{color:'red'}}>{passwordError}</div> }
+            {(passwordDirty && passwordError) && <div className={styles.error}>{passwordError}</div> }
             <input className={styles.input} onChange={e => passwordHandler(e)}
                    value={password} onBlur={e => blurHandler(e)}
                    name='password' type='password' placeholder='Введите пароль...'/>

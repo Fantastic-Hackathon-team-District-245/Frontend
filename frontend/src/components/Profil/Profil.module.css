@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 0.1fr 1fr 3fr 1fr;
     width: 1600px;
-    grid-auto-rows: minmax(50px, auto);
+    grid-auto-rows: minmax(20px, auto);
     align-items: start;
     justify-content: center;
     grid-gap: 2em;
@@ -65,10 +65,20 @@
     align-items: center;
     border-radius: 20px;
 }
-li {
-    margin: 2px 20px 2px 20px;
-}
 
-@media(max-width: 1600px) {
+@media(max-width: 1200px) {
+    .profil__container {
+        width: 1200px;
+    }
+}
+@media(max-width: 1000px) {
+    .profil__container {
+        width: 1000px;
+    }
+}
+@media(max-width: 768px) {
+
+}
+@media(max-width: 480px) {
 
 }

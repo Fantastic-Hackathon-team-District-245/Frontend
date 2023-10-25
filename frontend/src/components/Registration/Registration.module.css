@@ -1,9 +1,37 @@
 .form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0 0 gray;
+    width: 500px;
     padding: 20px;
-    margin: 20px;
+    margin: 0 auto;
 }
 .input{
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px gray inset;
     margin: 20px;
+    padding: 10px 14px;
+    width: 15em;
+    height: 2em;
+}
+.input:hover {
+
+}
+
+.error {
+    color: #ff0000;
+    text-align: center;
+}
+.submitBtn {
+    background-color: gray;
+}
+
+@media(max-width: 1200px) {
+
 }

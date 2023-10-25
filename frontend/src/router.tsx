@@ -8,7 +8,7 @@ import Turnir from "./components/Turnir/Turnir.tsx";
 
 const router = createBrowserRouter([
     {
-        path: "/register",
+        path: "/registration",
         element: <Registration/>,
     },
     {
