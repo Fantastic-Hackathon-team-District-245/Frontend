@@ -1,6 +1,7 @@
 import {ChangeEvent, FocusEvent, useEffect, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import styles from './Registration.module.css'
+import {Link} from 'react-router-dom'
 
 const Registration = () => {
     const [name, setName] = useState('')
@@ -94,28 +95,40 @@ const Registration = () => {
     }
 
 
-    return <div className="Registration">
-        <form className={styles.form}>
-            <h1>Регистрация</h1>
-            {(nameDirty && nameError) && <div className={styles.error}>{nameError}</div> }
-            <input className={styles.input} onChange={e => nameHandler(e)}
-                   value={name} onBlur={e => blurHandler(e)}
-                   name='name' type='text' placeholder='Введите имя...'/>
-            {(loginDirty && loginError) && <div className={styles.error}>{loginError}</div> }
-            <input className={styles.input} onChange={e => loginHandler(e)}
-                   value={login} onBlur={e => blurHandler(e)}
-                   name='login' type='text' placeholder='Введите логин...'/>
-            {(emailDirty && emailError) && <div className={styles.error}>{emailError}</div> }
-            <input className={styles.input} onChange={e => emailHandler(e)}
-                   value={email} onBlur={e => blurHandler(e)}
-                   name='email' type='text' placeholder='Введите email...'/>
-            {(passwordDirty && passwordError) && <div className={styles.error}>{passwordError}</div> }
-            <input className={styles.input} onChange={e => passwordHandler(e)}
-                   value={password} onBlur={e => blurHandler(e)}
-                   name='password' type='password' placeholder='Введите пароль...'/>
-            <button onClick={redirectToAnotherPage} disabled={!formValid} type='submit'>Регистрация</button>
-        </form>
-    </div>
+    return (
+        <div className={styles.registration_form}>
+            <div className={styles.circle}></div>
+            <form className={styles.registration_form_container}>
+                <h1 className={styles.form_title}>Регистрация</h1>
+                <div className={styles.form_fields}>
+                    {(nameDirty && nameError) && <div className={styles.error}>{nameError}</div>}
+                    <input className={styles.form_field} onChange={e => nameHandler(e)}
+                           value={name} onBlur={e => blurHandler(e)}
+                           name='name' type='text' placeholder='Имя'/>
+                    {(loginDirty && loginError) && <div className={styles.error}>{loginError}</div>}
+                    <input className={styles.form_field} onChange={e => loginHandler(e)}
+                           value={login} onBlur={e => blurHandler(e)}
+                           name='login' type='text' placeholder='Логин'/>
+                    {(emailDirty && emailError) && <div className={styles.error}>{emailError}</div>}
+                    <input className={styles.form_field} onChange={e => emailHandler(e)}
+                           value={email} onBlur={e => blurHandler(e)}
+                           name='email' type='text' placeholder='Почта'/>
+                    {(passwordDirty && passwordError) && <div className={styles.error}>{passwordError}</div>}
+                    <input className={styles.form_field} onChange={e => passwordHandler(e)}
+                           value={password} onBlur={e => blurHandler(e)}
+                           name='password' type='password' placeholder='Пароль'/>
+                </div>
+                <div className={styles.form_buttons}>
+                    <button className={styles.button} onClick={redirectToAnotherPage} disabled={!formValid}
+                            type='submit'>Регистрация
+                    </button>
+                    <div className={styles.divider}>или</div>
+                    <Link to={"/googleRegistration"}>
+                        <a className={styles.button + ` ` + styles.google_button}>Google</a>
+                    </Link>
+                </div>
+            </form>
+        </div>);
 };
 
 export default Registration;

@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    font-family: sans-serif;
+    font-family: sans-serif, 'Roboto';
     margin: 0px;
     padding: 0px;
 }
