@@ -20,12 +20,12 @@ const RegistrationForm = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (nameError || loginError || emailError || passwordError) {
+        if (nameError || emailError || passwordError || confirmationPasswordError) {
             setFormValid(false)
         } else {
             setFormValid(true)
         }
-    }, [nameError, loginError, emailError, passwordError])
+    }, [nameError, loginError, emailError, passwordError, confirmationPasswordError])
 
     const nameHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setName(e.target.value)
