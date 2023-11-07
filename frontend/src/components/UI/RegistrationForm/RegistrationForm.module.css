@@ -1,0 +1,105 @@
+.registration_form_container {
+    opacity: 0;
+    position: relative;
+    max-width: 415px;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 6px 50px rgba(217, 229, 225);
+    padding: 38px 30px 38px 30px;
+    border-radius: 20px;
+    animation-name: fadeForm;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.form_title {
+    color: #30507D;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 38px;
+}
+input{
+    height: 45px;
+    width: 100%;
+    color: #3B5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9F2FF;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #C1D9FD;
+}
+.form_fields {
+
+}
+.form_field {
+    margin-bottom: 13px;
+}
+.error {
+    color: #ff0000;
+    /*background-color: #ffc2c2;*/
+    /*border-radius: 5px;*/
+    /*height: 25px;*/
+}
+.button {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: #247FFF;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+}
+.button:hover {
+    background-color: #0D6CF2;
+}
+a {
+    text-decoration: none;
+}
+.google_button {
+    color: #C4CFDC;
+    background-color: #F2F6FF;
+}
+.google_button:hover {
+    color: white;
+    background-color: #E2E6F0;
+}
+.divider {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #405D87;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+@media (max-width: 480px) {
+    .registration_form_container {
+        width: 90%;
+    }
+}
